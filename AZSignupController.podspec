@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'Simple, but beautiful video-based Signup View Controller.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Simple, but beautiful video-based Signup View Controller by Azurcoding.
                        DESC
 
   s.homepage         = 'https://github.com/azurcoding/AZSignupController'
