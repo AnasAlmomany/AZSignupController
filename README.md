@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 AZSignupController is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +20,8 @@ pod 'AZSignupController'
 
 ## Author
 
-codingalex, alexandermarkl@me.com
+AZSignupController is brought to you by Azurcoding
+[![Azurcoding Logo](azurcoding.png)](https://azurcoding.com)
 
 ## License
 
