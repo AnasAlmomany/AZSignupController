@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AZSignupController
 
 class ViewController: UIViewController {
 

@@ -1,0 +1,6 @@
+framework module Pods_AZSignupController_Tests {
+  umbrella header "Pods-AZSignupController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

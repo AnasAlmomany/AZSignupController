@@ -31,7 +31,7 @@
 		0D7DD40727554A9559726AAB /* Pods-AZSignupController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZSignupController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AZSignupController_Tests/Pods-AZSignupController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DDE7EDEF359D3EF625DA5E1 /* Pods-AZSignupController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZSignupController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AZSignupController_Example/Pods-AZSignupController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		47961323C3FCBB682F1E6E1F /* Pods_AZSignupController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZSignupController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58F75FF9F2FBBDCFB8347494 /* AZSignupController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AZSignupController.podspec; path = ../AZSignupController.podspec; sourceTree = "<group>"; };
+		58F75FF9F2FBBDCFB8347494 /* AZSignupController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AZSignupController.podspec; path = ../AZSignupController.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AZSignupController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZSignupController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		75A50C774826ABE5FA88E27B /* Pods-AZSignupController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZSignupController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AZSignupController_Example/Pods-AZSignupController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7A8B4DEB57C72D763710C2AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7A8B4DEB57C72D763710C2AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AFCA4B9B1FF3D1C66757A2C7 /* Pods_AZSignupController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZSignupController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67E899C3F4452585A799E09 /* Pods-AZSignupController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZSignupController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AZSignupController_Tests/Pods-AZSignupController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FF0EDC2DFDC9B7A7F29D15AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FF0EDC2DFDC9B7A7F29D15AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,10 +335,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AZSignupController_Example/Pods-AZSignupController_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AZSignupController/AZSignupController.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZSignupController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -518,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AZSignupController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -533,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AZSignupController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
