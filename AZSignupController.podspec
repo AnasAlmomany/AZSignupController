@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AZSignupController'
-  s.version          = '0.1.1'
+  s.version          = '0.1.0'
   s.summary          = 'Simple, but beautiful video-based Signup View Controller.'
 
   s.description      = <<-DESC
