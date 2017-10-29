@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AZSignupController_Example' do
+  pod 'AZSignupController', :path => '../'
+
+  target 'AZSignupController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
